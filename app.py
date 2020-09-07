@@ -15,7 +15,8 @@ def add_Item():
     item = request.form['title']
     session.add_item(item)
 
-    return 'Added Successfully!'
+    items = session.get_items()
+    return render_template('index.html', items = items)
 
 if __name__ == '__main__':
     app.run()
