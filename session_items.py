@@ -1,10 +1,15 @@
 from flask import session
+import requests
+
 
 _DEFAULT_ITEMS = [
     { 'id': 1, 'status': 'Not Started', 'title': 'List saved todo items' },
     { 'id': 2, 'status': 'Not Started', 'title': 'Allow new items to be added' }
 ]
 
+
+def get_gettrello_items():
+    pass
 
 def get_items():
     """
