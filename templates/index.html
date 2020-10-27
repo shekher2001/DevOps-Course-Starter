@@ -23,7 +23,16 @@
     <label for="title">title:</label>
       <input type="text" id="title" name="title">
     </li>
-    <button type="submit">Send your title</button>
+    <button type="submit">Add Card</button>
   
    </form>
+
+   <form action="/move_Item" method="post">
+    
+    <label for="title">CardName:</label>
+      <input type="text" id="cardname" name="cardname">
+      <button type="submit">Move Card</button>
+    
+   </form>
+   
 {% endblock %}
